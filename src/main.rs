@@ -6,11 +6,7 @@ use bigint::BigUint;
 use num_traits::{Zero, One};
 use tramp::{tramp, Rec};
 
-// use bigint::{ToBigUint};
-
 fn fib(n: i32) -> BigUint {
-	// let mut acc = Zero::zero();
-	// let mut curr = One::one();
 	tramp(do_fib(n, Zero::zero(), One::one()))
 }
 
